@@ -1,26 +1,76 @@
+import {
+  FaHome,
+  FaMoneyBillWave,
+  FaUsers,
+  FaChartLine,
+  FaSms,
+  FaRobot,
+  FaCog,
+  FaSignOutAlt
+} from "react-icons/fa";
+
 function Sidebar() {
   return (
     <aside className="sidebar">
 
-      <h2>Higlow</h2>
+      <div className="logo">
 
-      <ul>
+        <h1>Higlow</h1>
 
-        <li>🏠 Home</li>
+        <p>Business Suite</p>
 
-        <li>💰 Payments</li>
+      </div>
 
-        <li>👥 Customers</li>
+      <nav>
 
-        <li>📊 Reports</li>
+        <ul>
 
-        <li>📩 SMS</li>
+          <li className="active">
+            <FaHome />
+            <span>Dashboard</span>
+          </li>
 
-        <li>🤖 Gemini AI</li>
+          <li>
+            <FaMoneyBillWave />
+            <span>Payments</span>
+          </li>
 
-        <li>⚙️ Settings</li>
+          <li>
+            <FaUsers />
+            <span>Customers</span>
+          </li>
 
-      </ul>
+          <li>
+            <FaChartLine />
+            <span>Reports</span>
+          </li>
+
+          <li>
+            <FaSms />
+            <span>SMS</span>
+          </li>
+
+          <li>
+            <FaRobot />
+            <span>Gemini AI</span>
+          </li>
+
+          <li>
+            <FaCog />
+            <span>Settings</span>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button className="logout">
+
+        <FaSignOutAlt />
+
+        Logout
+
+      </button>
 
     </aside>
   );
